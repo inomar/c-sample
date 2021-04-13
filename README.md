@@ -1,3 +1,12 @@
+## SetUp
+
 ```
-gcc -o /sample/dist/hello /sample/src/helloworld.c && /sample/dist/hello
+docker-compose build
+```
+
+## Usage
+
+```
+docker-compose run --rm sample /bin/ash
+gcc sample/src/hello.c -o sample/src/hello.o && sample/src/hello.o
 ```
